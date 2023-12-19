@@ -1,3 +1,5 @@
 import { getCookie } from 'cookies-next';
 
-export const darkTheme = getCookie("theme") == "dark" ? true : false;
+const darkTheme = getCookie("theme") == "dark" ? true : false;
+
+export default darkTheme;
