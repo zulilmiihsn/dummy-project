@@ -39,8 +39,8 @@ const Home: NextPage = () => {
           <img src="/mobile-ver/companies/frame 57.png" className="w-1/4"></img>
         </div>
         <div className="space-x-4 md:space-x-0 md:space-y-8 md:py-12 md:flex md:flex-col hidden">
-          <img src="/frame/frame 56.png"></img>
-          <img src="/frame/frame 57.png"></img>
+          <img src="/frame/Frame 56.png"></img>
+          <img src="/frame/Frame 57.png"></img>
         </div>
       </section>
       <section className="flex flex-col md:flex-row justify-center md:items-start py-8 px-8 lg:py-24 lg:px-24 md:py-12 md:px-12">
