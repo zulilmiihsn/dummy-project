@@ -5,11 +5,11 @@ import {
   signOut,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { auth } from "../../../firebase";
+import { auth } from "../../firebase";
 import Link from "next/link";
 import Share from "./Share";
 import Switcher, { Tab, theme } from './Switcher';
-import  darkTheme  from './plugins/sync';
+import { darkTheme } from './plugins/sync';
 import { LogoHorizontal } from "./Icons";
 
 const Navbar = () => {

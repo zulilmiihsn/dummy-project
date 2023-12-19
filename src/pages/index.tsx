@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { ArrowRight, ButtonLeft, ButtonRight, PlusButton } from "./components/Icons";
+import { ArrowRight, ButtonLeft, ButtonRight, PlusButton } from "../components/Icons";
 import React from "react";
 
 const Home: NextPage = () => {

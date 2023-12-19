@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 
 import { getCookie } from "cookies-next";
 import type { AppProps } from "next/app";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
 
