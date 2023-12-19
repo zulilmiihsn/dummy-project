@@ -35,8 +35,8 @@ const Home: NextPage = () => {
           Companies We Work With
         </h1>
         <div className="space-x-4 flex flex-row md:hidden w-full justify-center py-4">
-          <img src="/mobile-ver/companies/frame 56.png" className="w-1/4"></img>
-          <img src="/mobile-ver/companies/frame 57.png" className="w-1/4"></img>
+          <img src="/mobile-ver/companies/Frame 56.png" className="w-1/4"></img>
+          <img src="/mobile-ver/companies/Frame 57.png" className="w-1/4"></img>
         </div>
         <div className="space-x-4 md:space-x-0 md:space-y-8 md:py-12 md:flex md:flex-col hidden">
           <img src="/frame/Frame 56.png"></img>
