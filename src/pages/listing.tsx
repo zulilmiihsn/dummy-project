@@ -99,14 +99,14 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-white ">
+    <main className="bg-white dark:bg-black">
       <div className="min-h-screen z-10 w-full max-w-5xl items-center justify-between text-sm ">
         <div className="flex flex-col md:flex-row gap-8 md:gap-0 items-center w-screen py-8 px-12 xl:px-24 lg:px-18 md:px-12 md:py-12 sm:px-8 sm:py-8">
           <div className="md:w-1/2 flex flex-col justify-center space-y-4 xl:space-y-8 xl:py-24 lg:space-y-8 lg:py-24 md:space-y-4 sm:space-y-4">
-            <div className="text-black font-bold text-5xl xl:w-2/3 xl:text-7xl lg:w-2/3 lg:text-6xl md:w-4/5 md:text-5xl sm:w-4/5 sm:text-4xl">
+            <div className="text-black dark:text-white font-bold text-5xl xl:w-2/3 xl:text-7xl lg:w-2/3 lg:text-6xl md:w-4/5 md:text-5xl sm:w-4/5 sm:text-4xl">
               Our Expense Tracker
             </div>
-            <p className="text-black text-xs lg:text-lg md:text-sm sm:text-sm sm:w-3/4">
+            <p className="text-black dark:text-white text-xs lg:text-lg md:text-sm sm:text-sm sm:w-3/4">
               Discover the power of 'Our Expense Tracker' and take control of
               your finances like never before.
             </p>
@@ -116,7 +116,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="shadow-2xl bg-white rounded-lg items-center justify-between p-6 h-min">
+          <div className="shadow-2xl bg-white dark:bg-[#252526] rounded-lg items-center justify-between p-6 h-min">
             <form className="grid grid-cols-6 items-center text-black ">
               <input
                 value={
