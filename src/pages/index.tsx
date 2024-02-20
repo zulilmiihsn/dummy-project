@@ -5,14 +5,28 @@ import {
   ButtonRight,
   PlusButton,
 } from "../components/Icons";
+import { useRef } from "react";
 import React from "react";
 
 const Home: NextPage = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollToNext = () => {
+    if (containerRef.current) {
+        containerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+}
+
+const scrollToBack = () => {
+  if (containerRef.current) {
+      containerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+  }
+}
+
   return (
     <main>
       <header>
-        <div className="flex flex-col-reverse items-center md:items-start md:flex-row justify-between py-8 px-8 xl:px-24 lg:px-18 md:px-12 md:py-12 sm:px-8 sm:py-8">
-          <div className="md:w-1/2 flex flex-col py-8 justify-center space-y-4 xl:space-y-8 xl:py-24 lg:space-y-8 lg:py-24 md:space-y-4 sm:space-y-4">
+        <div className="flex flex-col-reverse items-center md:flex-row justify-between px-8 xl:px-24 lg:px-18 md:px-12 py-12">
+          <div className="md:w-1/2 flex flex-col justify-start py-8 space-y-4 xl:space-y-8 xl:py-24 lg:space-y-8 lg:py-24 md:space-y-4 sm:space-y-4">
             <div className="w-3/4 text-black dark:text-white font-bold text-5xl xl:w-2/3 xl:text-7xl lg:w-2/3 lg:text-6xl md:w-4/5 md:text-5xl sm:w-4/5 sm:text-4xl">
               We Take Care of Your Brand
             </div>
@@ -31,7 +45,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="md:w-1/2">
-            <img src="/image-header.png" alt="image-header" />
+            <img src="/image-header.png" alt="Embrace" />
           </div>
         </div>
       </header>
@@ -269,16 +283,16 @@ const Home: NextPage = () => {
               </h1>
             </div>
             <div className="space-x-2 hidden md:flex">
-              <button className="w-12 aspect-square rounded-full bg-gray-200 hover:bg-blue-500">
+              <button className="w-12 aspect-square rounded-full bg-gray-200 hover:bg-blue-500" onClick={scrollToBack}>
                 <ButtonLeft className="" />
               </button>
-              <button className="w-12 aspect-square rounded-full bg-gray-200 hover:bg-blue-500">
+              <button className="w-12 aspect-square rounded-full bg-gray-200 hover:bg-blue-500" onClick={scrollToNext}>
                 <ButtonRight className="" />
               </button>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full">
-            <div className="bg-[#FAFAFA] dark:bg-[#252526] dark:hover:bg-[#3461FF] hover:bg-[#3461FF] text-black dark:text-white hover:text-white transition duration-300 ease-in-out p-8 flex flex-col rounded-2xl sm:w-4/5 md:w-1/3 space-y-2">
+          <div ref={containerRef} className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 w-full overflow-x-auto scroll-snap-type-mandatory">
+            <div className="bg-[#FAFAFA] dark:bg-[#252526] dark:hover:bg-[#3461FF] hover:bg-[#3461FF] text-black dark:text-white hover:text-white transition duration-300 ease-in-out p-8 flex flex-col rounded-2xl sm:w-4/5 md:w-[35%] space-y-2 flex-none scroll-snap-start">
               <div className="flex space-x-4">
                 <div>
                   <img
@@ -300,7 +314,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#FAFAFA] dark:bg-[#252526] dark:hover:bg-[#3461FF] hover:bg-[#3461FF] text-black dark:text-white hover:text-white transition duration-300 ease-in-out p-8 flex flex-col rounded-2xl sm:w-4/5 md:w-1/3 space-y-2">
+            <div className="bg-[#FAFAFA] dark:bg-[#252526] dark:hover:bg-[#3461FF] hover:bg-[#3461FF] text-black dark:text-white hover:text-white transition duration-300 ease-in-out p-8 flex flex-col rounded-2xl sm:w-4/5 md:w-[35%] space-y-2 flex-none scroll-snap-start">
               <div className="flex space-x-4">
                 <div>
                   <img
@@ -323,7 +337,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#FAFAFA] dark:bg-[#252526] dark:hover:bg-[#3461FF] hover:bg-[#3461FF] text-black dark:text-white hover:text-white transition duration-300 ease-in-out p-8 flex flex-col rounded-2xl sm:w-4/5 md:w-1/3 space-y-2">
+            <div className="bg-[#FAFAFA] dark:bg-[#252526] dark:hover:bg-[#3461FF] hover:bg-[#3461FF] text-black dark:text-white hover:text-white transition duration-300 ease-in-out p-8 flex flex-col rounded-2xl sm:w-4/5 md:w-[35%] space-y-2 flex-none scroll-snap-start">
               <div className="flex space-x-4">
                 <div>
                   <img

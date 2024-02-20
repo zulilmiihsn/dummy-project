@@ -7,7 +7,7 @@ import { Inter } from "next/font/google";
 import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-const theme = getCookie('theme')
+
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = getCookie('theme')
